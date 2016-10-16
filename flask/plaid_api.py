@@ -58,4 +58,5 @@ class Plaid():
         if r.status_code == 200:
             data = json.loads(r.text)
             return data
+        print r.text
         return None
