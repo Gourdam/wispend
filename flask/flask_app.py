@@ -5,6 +5,7 @@ import calendar
 import threading
 import random
 import json
+import numpy as np
 
 from plaid_api import Plaid
 import mongodb
@@ -12,8 +13,7 @@ import mongodb
 app = Flask(__name__)
 api = Api(app)
 
-month = 9
-total_budget = 400
+total_budget = 100
 
 budget = {
     'Food and Drink': {
@@ -21,12 +21,12 @@ budget = {
         'budget':total_budget*0.15,
     },
     'Healthcare': {
-        'percent': 0.5,
-        'budget': total_budget*0.5,
+        'percent': 0.05,
+        'budget': total_budget*0.05,
     },
     'Recreation': {
-        'percent': 0.5,
-        'budget': total_budget*0.5,
+        'percent': 0.05,
+        'budget': total_budget*0.05,
     },
     'Shops': {
         'percent': 0.10,
@@ -84,9 +84,10 @@ class Format(Resource):
             categories[transaction['category'][0]]['amount'].append(transaction['amount'])
         for category, value in categories.iteritems():
             category_sum = sum(value['amount'])
+            # over budget case
             if category_sum > budget[category]['budget']:
                 message = {
-                    'title': 'You have exceeded your monthly allocated budget for category {0}'.format(category),
+                    'title': 'You have exceeded your monthly allocated budget for {0}'.format(category),
                     'timestamp': str(calendar.timegm(time.gmtime())),
                     'image': 'test',
                     'unread': True,
@@ -94,7 +95,23 @@ class Format(Resource):
                 mongodb.post_notification(message)
                 message['_id'] = str(message['_id'])
                 messages.append(message)
-
+                continue
+            # next case
+            x = np.arange(len(value['amount']))
+            y = np.array(value['amount'])
+            m, b = np.polyfit(x,y,1)
+            future_value = m*5 + b
+            future_budget = budget[category]['budget']/6
+            if future_value > future_budget:
+                message = {
+                    'title': 'You are projected to exceed your monthly planned budget for {0}'.format(category),
+                    'timestamp': str(calendar.timegm(time.gmtime())),
+                    'image': 'test',
+                    'unread': True,
+                }
+                mongodb.post_notification(message)
+                message['_id'] = str(message['_id'])
+                messages.append(message)
         return {'messages': messages}
 
 

@@ -25,3 +25,5 @@ categories = {
 # Over budget percentage
 # Sum up total value of all categories to find total spent for past 30 days
 # Each category * category percentage to get category perc
+
+gunicorn --bind 0.0.0.0:8000 flask_app:app

@@ -51,16 +51,17 @@ def get_unread_notifications():
     for notification in notifications:
         notification['_id'] = str(notification['_id'])
         data.append(notification)
-    db.notifications.update(
-    {
-        'unread': True,
-    },
-    {
-        '$set': {
-            'unread': False
-        }
-    },
-    upsert=False,
-    multi=True,)
+        db.notifications.update(
+        {
+            '_id': notification['_id'],
+        },
+        {
+            '$set': {
+                'unread': False
+            }
+        },
+        upsert=False,
+        multi=True,)
+        break
     client.close()
     return data
