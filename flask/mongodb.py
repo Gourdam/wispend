@@ -49,7 +49,8 @@ def get_unread_notifications():
     notifications = db.notifications.find({'unread': True})
     data = []
     for notification in notifications:
-        data.append(notification.to_mongo())
+        notification['_id'] = str(notification['_id'])
+        data.append(notification)
     db.notifications.update(
     {
         'unread': True,

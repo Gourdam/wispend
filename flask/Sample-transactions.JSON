@@ -1,0 +1,1787 @@
+{
+	"transactions": [{
+			"_account": "User",
+			"_id": "001",
+			"amount": 3,
+			"date": "2016-10-01",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Food and Drink",
+				"Restaurants",
+				"Coffee Shop"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		}, {
+			"_account": "User",
+			"_id": "002",
+			"amount": 10,
+			"date": "2016-09-30",
+			"name": "Sandwich",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Food and Drink",
+				"Restaurants",
+				"Coffee Shop"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		}, {
+			"_account": "User",
+			"_id": "003",
+			"amount": 5,
+			"date": "2016-09-29",
+			"name": "Pastry",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Food and Drink",
+				"Restaurants",
+				"Coffee Shop"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		}, {
+			"_account": "User",
+			"_id": "004",
+			"amount": 20,
+			"date": "2016-09-28",
+			"name": "Cake",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Food and Drink",
+				"Restaurants",
+				"Coffee Shop"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		}, {
+			"_account": "User",
+			"_id": "005",
+			"amount": 3,
+			"date": "2016-09-27",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Food and Drink",
+				"Restaurants",
+				"Coffee Shop"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		}, {
+			"_account": "User",
+			"_id": "006",
+			"amount": 20,
+			"date": "2016-09-26",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Food and Drink",
+				"Restaurants",
+				"Coffee Shop"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		}, {
+			"_account": "User",
+			"_id": "007",
+			"amount": 20,
+			"date": "2016-09-25",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Food and Drink",
+				"Restaurants",
+				"Coffee Shop"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		}, {
+			"_account": "User",
+			"_id": "008",
+			"amount": 20,
+			"date": "2016-09-24",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Food and Drink",
+				"Restaurants",
+				"Coffee Shop"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		}, {
+			"_account": "User",
+			"_id": "009",
+			"amount": 20,
+			"date": "2016-09-23",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Food and Drink",
+				"Restaurants",
+				"Coffee Shop"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "010",
+			"amount": 20,
+			"date": "2016-09-22",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Food and Drink",
+				"Restaurants",
+				"Coffee Shop"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		}, {
+			"_account": "User",
+			"_id": "001",
+			"amount": 25,
+			"date": "2016-10-01",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Healthcare"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "002",
+			"amount": 20,
+			"date": "2016-09-30",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Healthcare"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "003",
+			"amount": 5,
+			"date": "2016-09-29",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Healthcare"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "004",
+			"amount": 20,
+			"date": "2016-09-28",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Healthcare"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+
+		{
+			"_account": "User",
+			"_id": "005",
+			"amount": 5,
+			"date": "2016-09-27",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Healthcare"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "006",
+			"amount": 10,
+			"date": "2016-09-26",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Healthcare"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "007",
+			"amount": 5,
+			"date": "2016-09-25",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Healthcare"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "008",
+			"amount": 20,
+			"date": "2016-09-24",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Healthcare"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "009",
+			"amount": 15,
+			"date": "2016-09-23",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Healthcare"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "010",
+			"amount": 5,
+			"date": "2016-09-22",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Healthcare"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		}, {
+			"_account": "User",
+			"_id": "001",
+			"amount": 3,
+			"date": "2016-10-01",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Recreation"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "002",
+			"amount": 5,
+			"date": "2016-09-30",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Recreation"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "003",
+			"amount": 5,
+			"date": "2016-09-29",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Recreation"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "004",
+			"amount": 20,
+			"date": "2016-09-28",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Recreation"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+
+		{
+			"_account": "User",
+			"_id": "005",
+			"amount": 15,
+			"date": "2016-09-27",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Recreation"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "006",
+			"amount": 10,
+			"date": "2016-09-26",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Recreation"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "007",
+			"amount": 25,
+			"date": "2016-09-25",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Recreation"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "008",
+			"amount": 20,
+			"date": "2016-09-24",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Recreation"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "009",
+			"amount": 25,
+			"date": "2016-09-23",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Recreation"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "010",
+			"amount": 35,
+			"date": "2016-09-22",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Recreation"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		}, {
+			"_account": "User",
+			"_id": "001",
+			"amount": 3,
+			"date": "2016-10-01",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Shops"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "002",
+			"amount": 5,
+			"date": "2016-09-30",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Shops"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "003",
+			"amount": 5,
+			"date": "2016-09-29",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Shops"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "004",
+			"amount": 2,
+			"date": "2016-09-28",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Shops"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+
+		{
+			"_account": "User",
+			"_id": "005",
+			"amount": 5,
+			"date": "2016-09-27",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Shops"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "006",
+			"amount": 10,
+			"date": "2016-09-26",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Shops"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "007",
+			"amount": 5,
+			"date": "2016-09-25",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Shops"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "008",
+			"amount": 2,
+			"date": "2016-09-24",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Shops"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "009",
+			"amount": 7,
+			"date": "2016-09-23",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Shops"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "010",
+			"amount": 3,
+			"date": "2016-09-22",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Shops"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		}, {
+			"_account": "User",
+			"_id": "001",
+			"amount": 5,
+			"date": "2016-10-01",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Travel"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "002",
+			"amount": 5,
+			"date": "2016-09-30",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Travel"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "003",
+			"amount": 5,
+			"date": "2016-09-29",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Travel"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "004",
+			"amount": 5,
+			"date": "2016-09-28",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Travel"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+
+		{
+			"_account": "User",
+			"_id": "005",
+			"amount": 5,
+			"date": "2016-09-27",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Travel"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "006",
+			"amount": 5,
+			"date": "2016-09-26",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Travel"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "007",
+			"amount": 5,
+			"date": "2016-09-25",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Travel"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "008",
+			"amount": 5,
+			"date": "2016-09-24",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Travel"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "009",
+			"amount": 5,
+			"date": "2016-09-23",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Travel"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "010",
+			"amount": 5,
+			"date": "2016-09-22",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Travel"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		}, {
+			"_account": "User",
+			"_id": "001",
+			"amount": 15,
+			"date": "2016-10-01",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Payment"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "002",
+			"amount": 15,
+			"date": "2016-09-30",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Payment"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "003",
+			"amount": 15,
+			"date": "2016-09-29",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Payment"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "004",
+			"amount": 15,
+			"date": "2016-09-28",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Payment"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+
+		{
+			"_account": "User",
+			"_id": "005",
+			"amount": 15,
+			"date": "2016-09-27",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Payment"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "006",
+			"amount": 15,
+			"date": "2016-09-26",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Payment"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "007",
+			"amount": 15,
+			"date": "2016-09-25",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Payment"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "008",
+			"amount": 15,
+			"date": "2016-09-24",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Payment"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "009",
+			"amount": 15,
+			"date": "2016-09-23",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Payment"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		},
+
+
+		{
+			"_account": "User",
+			"_id": "010",
+			"amount": 15,
+			"date": "2016-09-22",
+			"name": "Coffee",
+			"meta": {
+				"location": {
+					"city": "San Francisco",
+					"state": "CA"
+				}
+			},
+			"pending": false,
+			"type": {
+				"primary": "special"
+			},
+			"category": [
+				"Payment"
+			],
+			"category_id": "21012002",
+			"score": {
+				"location": {
+					"city": 1,
+					"state": 1
+				},
+				"name": 1
+			}
+		}
+	]
+}
