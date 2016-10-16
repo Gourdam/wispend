@@ -87,7 +87,7 @@ class Format(Resource):
             # over budget case
             if category_sum > budget[category]['budget']:
                 message = {
-                    'title': 'You have exceeded your monthly allocated budget for {0}'.format(category),
+                    'title': 'You have exceeded your monthly allocated budget for {0}.'.format(category),
                     'timestamp': str(calendar.timegm(time.gmtime())),
                     'image': 'test',
                     'unread': True,
@@ -104,7 +104,7 @@ class Format(Resource):
             future_budget = budget[category]['budget']/6
             if future_value > future_budget:
                 message = {
-                    'title': 'You are projected to exceed your monthly planned budget for {0}'.format(category),
+                    'title': 'You are projected to exceed your monthly planned budget for {0}.'.format(category),
                     'timestamp': str(calendar.timegm(time.gmtime())),
                     'image': 'test',
                     'unread': True,

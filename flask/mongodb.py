@@ -42,7 +42,7 @@ def post_notification(data):
     client.close()
     return result
 
-def get_unread_notifications():
+def get_unread_notifications(multi=True):
     client = connect_to_mongo()
     notifications = []
     db = client.db
@@ -51,17 +51,16 @@ def get_unread_notifications():
     for notification in notifications:
         notification['_id'] = str(notification['_id'])
         data.append(notification)
-        db.notifications.update(
-        {
-            '_id': notification['_id'],
-        },
-        {
-            '$set': {
-                'unread': False
-            }
-        },
-        upsert=False,
-        multi=True,)
-        break
+    db.notifications.update(
+    {
+        'unread': True,
+    },
+    {
+        '$set': {
+            'unread': False
+        }
+    },
+    upsert=False,
+    multi=True,)
     client.close()
     return data
