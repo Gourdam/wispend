@@ -114,7 +114,7 @@ class Notifications(Resource):
     def get(self):
         notifications = mongodb.get_unread_notifications()
         for notification in notifications:
-            notification['timestamp'] = str(calendar.timegm(time.gmtime())),
+            notification['timestamp'] = str(calendar.timegm(time.gmtime()))
         return {'notifications': notifications}
 
 @app.route('/')
