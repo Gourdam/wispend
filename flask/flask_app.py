@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 from flask_restful import Resource, Api
 import time
+import calendar
 import threading
 import random
 import json
@@ -84,7 +85,6 @@ class Format(Resource):
             if category_sum > budget[category]['budget']:
                 message = {
                     'title': 'You have exceeded your monthly allocated budget for {0}.'.format(category),
-                    'timestamp': str(int(round(time.time() * 1000))),
                     'image': 'test',
                     'unread': True,
                 }
@@ -101,7 +101,6 @@ class Format(Resource):
             if future_value > future_budget:
                 message = {
                     'title': 'You are projected to exceed your monthly planned budget for {0}.'.format(category),
-                    'timestamp': str(int(round(time.time() * 1000))),
                     'image': 'test',
                     'unread': True,
                 }
@@ -114,6 +113,8 @@ class Format(Resource):
 class Notifications(Resource):
     def get(self):
         notifications = mongodb.get_unread_notifications()
+        for notification in notifications:
+            notification['timestamp'] = str(calendar.timegm(time.gmtime())),
         return {'notifications': notifications}
 
 @app.route('/')
