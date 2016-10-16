@@ -4,7 +4,6 @@ import time
 import calendar
 
 from plaid_api import Plaid
-import mongodb
 
 app = Flask(__name__)
 api = Api(app)
@@ -20,13 +19,13 @@ test = [
         },
         {
             "title": "Memes are dremes",
-            "timestamp": "1476590786"
+            "timestamp": "1476590792",
             "image": "this_one",
         }
 ]
 class Notifications(Resource):
     def get(self):
-        notifications = mongodb.get_unread_notifications()
+        #notifications = mongodb.get_unread_notifications()
         timestamp = str(calendar.timegm(time.gmtime()))
         for notification in notifications:
             notification['timestamp'] = timestamp
