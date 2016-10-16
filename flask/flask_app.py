@@ -2,8 +2,11 @@ from flask import Flask
 from flask_restful import Resource, Api
 import time
 import calendar
+import threading
+import random
 
 from plaid_api import Plaid
+import mongodb
 
 app = Flask(__name__)
 api = Api(app)
@@ -25,11 +28,14 @@ test = [
 ]
 class Notifications(Resource):
     def get(self):
-        #notifications = mongodb.get_unread_notifications()
-        timestamp = str(calendar.timegm(time.gmtime()))
-        for notification in notifications:
-            notification['timestamp'] = timestamp
-
+        test = {
+            'title': str(random.randint(1, 10)),
+            'timestamp': str(calendar.timegm(time.gmtime())),
+            'image': 'test',
+        }
+        if random.randint(1, 5) == 3:
+            mongodb.post_notification(test)
+        notifications = mongodb.get_unread_notifications()
         return {'notifications': test}
 
 api.add_resource(Notifications, '/notifications')

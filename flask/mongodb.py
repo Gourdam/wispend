@@ -1,4 +1,4 @@
-from MongoKit import Connection
+from pymongo import MongoClient
 
 MONGODB_HOST = 'localhost'
 MONGODB_PORT = 27017
@@ -6,27 +6,61 @@ MONGODB_PORT = 27017
 def connect_to_mongo(host=None, port=None):
     host = host or MONGODB_HOST
     port = port or MONGODB_PORT
-    connection = Connection(app.config['host'], app.config['port'])
-    return connection
+    client = MongoClient()
+    return client
 
 def post_user(data):
-    connection = connect_to_mongo()
-    pass
+    client = connect_to_mongo()
+    db = client.db
+    users = db.users
+    result = users.insert_one(data)
+    client.close()
+    return result
 
 def get_user(user):
-    connection =  connect_to_mongo()
+    # client =  connect_to_mongo()
+    # db = client.db
+    # users = db.users
     pass
 
 def post_transactions(data):
-    connection = connect_to_mongo()
+    client = connect_to_mongo()
+    db = client.db
+    transactions = db.transactions
+    result = transactions.insert_many(data)
     pass
 
 def get_transactions():
-    connection = connect_to_mongo()
+    client = connect_to_mongo()
     pass
 
+def post_notification(data):
+    data = {
+        'title': 'Dont do drugs',
+        'timestamp': '1476590786',
+        'image': 'that_one',
+        'unread': True,
+    }
+    client = connect_to_mongo()
+    db = client.db
+    notifications = db.notifications
+    result = notifications.insert_one(data)
+    client.close()
+    return result
+
 def get_unread_notifications():
-    connection = connect_to_mongo()
+    client = connect_to_mongo()
     notifications = []
-    # get all unread notifcations
+    db = client.db
+    notifications = db.notifications.find({'unread': True})
+    db.notifications.update(
+    {
+        'unread': True,
+    },
+    {
+        '$set': {
+            'unread': False
+        }
+    }, upsert=False)
+    client.close()
     return notifications
