@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">wiSpend</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_off">Turn Off Notifications</string>
+    <string name="action_on">Turn On Notifications</string>
+
+    <string name="action_clear">Clear Feed</string>
+
+    <string name="action_refresh">Refresh</string>
+</resources>
