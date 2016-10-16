@@ -46,7 +46,10 @@ def get_unread_notifications():
     client = connect_to_mongo()
     notifications = []
     db = client.db
-    notifications = list(db.notifications.find({'unread': True}))
+    notifications = db.notifications.find({'unread': True})
+    data = []
+    for notification in notifications:
+        data.append(notification.to_mongo())
     db.notifications.update(
     {
         'unread': True,
@@ -59,4 +62,4 @@ def get_unread_notifications():
     upsert=False,
     multi=True,)
     client.close()
-    return notifications
+    return data
