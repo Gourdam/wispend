@@ -1,0 +1,27 @@
+{
+
+}
+
+for transaction in transactions:
+    find id value
+categories = {
+    'Food and Drink': {
+        'date': [],
+        'amount': [],
+    },
+    'Entertainment': {
+        'date': [],
+        'amount': [],
+    }
+}
+
+# Over budget absolute
+# Sum up all amounts per category since beginning of current month Oct 16 2016 (from Oct 1)
+# Compare that with budget limit with total sum per category
+# Flag category if numerical value is over the total sum
+# Create notification
+# Total sum per category will be equal to the category percentage * total monthly budget
+
+# Over budget percentage
+# Sum up total value of all categories to find total spent for past 30 days
+# Each category * category percentage to get category perc

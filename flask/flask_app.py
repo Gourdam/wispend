@@ -12,8 +12,7 @@ api = Api(app)
 # Title
 # date
 # image to use
-{
-    "notifcations": [
+test = [
         {
             "title": "Don't do drugs",
             "timestamp": "1476590786"
@@ -24,20 +23,15 @@ api = Api(app)
             "timestamp": "1476590786"
             "image": "this_one",
         }
-    ]
-}
-{
-    "title": "Don't do drugs",
-    "timestamp": "1476590786"
-    "image": "that_one",
-}
+]
 class Notifications(Resource):
     def get(self):
         notifications = mongodb.get_unread_notifications()
         timestamp = str(calendar.timegm(time.gmtime()))
         for notification in notifications:
             notification['timestamp'] = timestamp
-        return {'notifications': notifications}
+
+        return {'notifications': test}
 
 api.add_resource(Notifications, '/notifications')
 

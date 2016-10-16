@@ -9,19 +9,24 @@ def connect_to_mongo(host=None, port=None):
     connection = Connection(app.config['host'], app.config['port'])
     return connection
 
-def post_user(connection, data):
+def post_user(data):
+    connection = connect_to_mongo()
     pass
 
-def get_user(connection, _user):
+def get_user(user):
+    connection =  connect_to_mongo()
     pass
 
-def post_transactions(connection, data):
+def post_transactions(data):
+    connection = connect_to_mongo()
     pass
 
-def get_transactions(connection):
+def get_transactions():
+    connection = connect_to_mongo()
     pass
 
-def get_unread_notifications(connection):
-    notifications = {}
+def get_unread_notifications():
+    connection = connect_to_mongo()
+    notifications = []
     # get all unread notifcations
     return notifications
