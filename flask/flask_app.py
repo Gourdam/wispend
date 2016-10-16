@@ -32,11 +32,11 @@ class Notifications(Resource):
             'title': str(random.randint(1, 10)),
             'timestamp': str(calendar.timegm(time.gmtime())),
             'image': 'test',
+            'unread': True,
         }
-        if random.randint(1, 5) == 3:
-            mongodb.post_notification(test)
+        mongodb.post_notification(test)
         notifications = mongodb.get_unread_notifications()
-        return {'notifications': test}
+        return {'notifications': notifications}
 
 api.add_resource(Notifications, '/notifications')
 

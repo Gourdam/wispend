@@ -35,12 +35,6 @@ def get_transactions():
     pass
 
 def post_notification(data):
-    data = {
-        'title': 'Dont do drugs',
-        'timestamp': '1476590786',
-        'image': 'that_one',
-        'unread': True,
-    }
     client = connect_to_mongo()
     db = client.db
     notifications = db.notifications
@@ -52,7 +46,7 @@ def get_unread_notifications():
     client = connect_to_mongo()
     notifications = []
     db = client.db
-    notifications = db.notifications.find({'unread': True})
+    notifications = list(db.notifications.find({'unread': True}))
     db.notifications.update(
     {
         'unread': True,
@@ -61,6 +55,8 @@ def get_unread_notifications():
         '$set': {
             'unread': False
         }
-    }, upsert=False)
+    },
+    upsert=False,
+    multi=True,)
     client.close()
     return notifications
