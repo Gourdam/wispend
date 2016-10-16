@@ -1,7 +1,6 @@
 from flask import Flask, render_template
 from flask_restful import Resource, Api
 import time
-import calendar
 import threading
 import random
 import json
@@ -13,68 +12,65 @@ import mongodb
 app = Flask(__name__)
 api = Api(app)
 
-total_budget = 100
-
-budget = {
-    'Food and Drink': {
-        'percent': 0.15,
-        'budget':total_budget*0.15,
-    },
-    'Healthcare': {
-        'percent': 0.05,
-        'budget': total_budget*0.05,
-    },
-    'Recreation': {
-        'percent': 0.05,
-        'budget': total_budget*0.05,
-    },
-    'Shops': {
-        'percent': 0.10,
-        'budget': total_budget*0.10,
-    },
-    'Travel': {
-        'percent': 0.10,
-        'budget': total_budget*0.10,
-    },
-    'Payment': {
-        'percent': 0.40,
-        'budget': total_budget*0.4,
-    },
-    'Savings':{
-        'percent': 0.15,
-        'budget': total_budget*0.15,
-    },
-}
-categories = {
-    'Food and Drink': {
-        'date': [],
-        'amount': [],
-    },
-    'Healthcare': {
-        'date': [],
-        'amount': [],
-    },
-    'Recreation': {
-        'date': [],
-        'amount': [],
-    },
-    'Shops': {
-        'date': [],
-        'amount': [],
-    },
-    'Travel': {
-        'date': [],
-        'amount': [],
-    },
-    'Payment': {
-        'date': [],
-        'amount': [],
-    }
-}
-
 
 class Format(Resource):
-    def get(self):
+    def get(self, total_budget):
+        budget = {
+            'Food and Drink': {
+                'percent': 0.15,
+                'budget':total_budget*0.15,
+            },
+            'Healthcare': {
+                'percent': 0.05,
+                'budget': total_budget*0.05,
+            },
+            'Recreation': {
+                'percent': 0.05,
+                'budget': total_budget*0.05,
+            },
+            'Shops': {
+                'percent': 0.10,
+                'budget': total_budget*0.10,
+            },
+            'Travel': {
+                'percent': 0.10,
+                'budget': total_budget*0.10,
+            },
+            'Payment': {
+                'percent': 0.40,
+                'budget': total_budget*0.4,
+            },
+            'Savings':{
+                'percent': 0.15,
+                'budget': total_budget*0.15,
+            },
+        }
+        categories = {
+            'Food and Drink': {
+                'date': [],
+                'amount': [],
+            },
+            'Healthcare': {
+                'date': [],
+                'amount': [],
+            },
+            'Recreation': {
+                'date': [],
+                'amount': [],
+            },
+            'Shops': {
+                'date': [],
+                'amount': [],
+            },
+            'Travel': {
+                'date': [],
+                'amount': [],
+            },
+            'Payment': {
+                'date': [],
+                'amount': [],
+            }
+        }
         data = None
         messages = []
         with open('Sample-transactions.JSON') as data_file:
@@ -88,7 +84,7 @@ class Format(Resource):
             if category_sum > budget[category]['budget']:
                 message = {
                     'title': 'You have exceeded your monthly allocated budget for {0}.'.format(category),
-                    'timestamp': str(calendar.timegm(time.gmtime())),
+                    'timestamp': str(int(round(time.time() * 1000))),
                     'image': 'test',
                     'unread': True,
                 }
@@ -96,7 +92,7 @@ class Format(Resource):
                 message['_id'] = str(message['_id'])
                 messages.append(message)
                 continue
-            # next case
+            # projection to over budget case
             x = np.arange(len(value['amount']))
             y = np.array(value['amount'])
             m, b = np.polyfit(x,y,1)
@@ -105,7 +101,7 @@ class Format(Resource):
             if future_value > future_budget:
                 message = {
                     'title': 'You are projected to exceed your monthly planned budget for {0}.'.format(category),
-                    'timestamp': str(calendar.timegm(time.gmtime())),
+                    'timestamp': str(int(round(time.time() * 1000))),
                     'image': 'test',
                     'unread': True,
                 }
@@ -125,7 +121,7 @@ def index():
     return render_template('index.html')
 
 api.add_resource(Notifications, '/notifications')
-api.add_resource(Format, '/format')
+api.add_resource(Format, '/format/<int:total_budget>')
 
 if __name__ == '__main__':
     app.run(debug=True)
