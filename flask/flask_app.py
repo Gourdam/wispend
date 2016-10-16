@@ -15,7 +15,7 @@ api = Api(app)
 test = [
         {
             "title": "Don't do drugs",
-            "timestamp": "1476590786"
+            "timestamp": "1476590786",
             "image": "that_one",
         },
         {
